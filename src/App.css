@@ -1,0 +1,156 @@
+body {
+  font-family: Roboto, Arial;
+  color: rgb(33, 33, 33);
+  margin: 0;
+}
+
+.product-list {
+  margin: 3rem;
+  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+  max-width: 500px;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 15px;
+  padding-top: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.product-card:hover {
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+  box-shadow: 1rem 1rem 5px hsla(0, 0%, 0%, 0.1);
+}
+
+.product-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.product-details {
+  padding: 16px;
+}
+
+.product-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.product-name {
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+.product-price {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.product-rating {
+  margin: 7px;
+}
+
+.add-to-cart-button {
+  bottom: 0;
+  color: rgb(33, 33, 33);
+  background-color: rgb(255, 216, 20);
+  border: 1px solid rgb(252, 210, 0);
+  width: 100%;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  border-radius: 50rem;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+}
+
+.add-to-cart-button:hover {
+  background-color: rgb(247, 202, 0);
+  border: 1px solid rgb(242, 194, 0);
+}
+
+.add-to-cart-button:active {
+  background: rgb(255, 216, 20);
+  border-color: rgb(252, 210, 0);
+  box-shadow: none;
+}
+
+.product-quantity-container {
+  margin-bottom: 17px;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+select {
+  cursor: pointer;
+}
+
+input,
+select,
+button {
+  font-family: Roboto, Arial;
+}
+
+select {
+  color: rgb(33, 33, 33);
+  background-color: rgb(240, 240, 240);
+  border: 1px solid rgb(213, 217, 217);
+  border-radius: 8px;
+  padding: 3px 5px;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+}
+
+select:focus,
+input:focus {
+  outline: 2px solid rgb(255, 153, 0);
+}
+
+.pagination {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.pagination > span {
+  padding: 20px 25px;
+  border: 1px solid gray;
+  cursor: pointer;
+  border-radius: 50rem;
+  font-weight: 700;
+}
+
+.pagination__disable {
+  opacity: 0;
+}
+
+.pagination__selected {
+  background-color: rgb(220, 220, 220);
+}
